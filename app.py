@@ -1,11 +1,3 @@
-# requirements.txt
-streamlit==1.33.0
-streamlit-chat==0.1.0
-pandas==2.0.3
-python-dotenv==1.0.0
-pywhatkit==5.4
-
-# app.py
 import streamlit as st
 from streamlit_chat import message
 import pandas as pd
