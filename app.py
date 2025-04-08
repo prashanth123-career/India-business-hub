@@ -118,7 +118,6 @@ def inject_custom_css():
             color: white;
         }
 
-        /* Radio and button padding */
         .stRadio > div {
             padding-bottom: 10px;
         }
@@ -138,8 +137,8 @@ def inject_custom_css():
     """, unsafe_allow_html=True)
 
 def main():
-    inject_custom_css()
-    st.set_page_config(page_title="🌍 Global Business Setup Advisor", layout="wide")
+    st.set_page_config(page_title="🌍 Global Business Setup Advisor", layout="wide")  # ✅ MUST be first Streamlit call
+    inject_custom_css()  # ✅ Custom styles
     st.title("🌐 Global Business Setup Advisor")
     st.markdown("Your expert guide to setting up your business in **India**, **UK**, or **Cross-Border**.")
 
